@@ -5,7 +5,7 @@ import Dashboard from './Dashboard'; // Import the new Dashboard component
 import RecentActivity from './RecentActivity'; // Import the new RecentActivity component
 
 // Custom hook for scroll-triggered animations
-const useScrollAnimation = () => {
+const useScrollAnimation = (currentPage) => { // Accept currentPage as a prop
   React.useEffect(() => {
     const observerOptions = {
       threshold: 0.1,
@@ -20,12 +20,25 @@ const useScrollAnimation = () => {
       });
     }, observerOptions);
 
-    // Observe all elements with scroll-animate class
     const animateElements = document.querySelectorAll('.scroll-animate');
-    animateElements.forEach((el) => observer.observe(el));
+
+    // If navigating back to home, reset animations and re-observe
+    if (currentPage === 'home') {
+      animateElements.forEach((el) => {
+        el.classList.remove('animate-in'); // Remove the class to reset animation
+        observer.unobserve(el); // Unobserve before re-observing to prevent issues
+        observer.observe(el); // Re-observe to trigger animation on scroll
+      });
+    } else {
+      // For other pages, just observe if not already observed
+      animateElements.forEach((el) => {
+        observer.observe(el);
+      });
+    }
+
 
     return () => observer.disconnect();
-  }, []);
+  }, [currentPage]); // Re-run effect when currentPage changes
 };
 
 function App() {
@@ -33,8 +46,8 @@ function App() {
   // Removed isDarkMode state, now always in light mode
   const [currentPage, setCurrentPage] = useState('home'); 
   
-  // Initialize scroll animations
-  useScrollAnimation();
+  // Initialize scroll animations, passing currentPage
+  useScrollAnimation(currentPage);
 
   // useEffect to set the document title and favicon
   useEffect(() => {
@@ -374,9 +387,9 @@ function App() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-8 sm:mb-12 lg:mb-16 scroll-animate">
                 <h2 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 animate-fade-in-up px-2">
-                  <span className={'text-[#030303]'}>Everything You Need to</span>
+                  <span className={'text-[#3D67FF]'}>Everything You Need to</span>
                   <br />
-                  <span className={"text-[#385cfc]"}>
+                  <span className={"text-[#060606]"}>
                     Succeed
                   </span>
                 </h2>
@@ -411,7 +424,7 @@ function App() {
               <div className="text-center mb-8 sm:mb-12 lg:mb-16 scroll-animate">
                 <h2 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 px-2">
                   <span className={'text-[#070707]'}>How It </span>
-                  <span className={"text-[#385cfc]"}>
+                  <span className={"text-[#3D67FF]"}>
                     Works
                   </span>
                 </h2>
@@ -520,7 +533,7 @@ function App() {
                 <h2 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 animate-fade-in-up px-2">
                   <span className={'text-[#000000]'}>Meet Your AI</span>
                   <br />
-                  <span className={"text-[#385cfc]"}>
+                  <span className={"text-[#3D67FF]"}>
                     Teaching Assistants
                   </span>
                 </h2>
@@ -580,7 +593,7 @@ function App() {
                 <h2 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 animate-fade-in-up px-2">
                   <span className={'text-[#040404]'}>Why Homeschooling Educators</span>
                   <br />
-                  <span className={"text-[#385cfc]"}>
+                  <span className={"text-[#3D67FF]"}>
                     Love Dumroo AI
                   </span>
                 </h2>
@@ -660,7 +673,7 @@ function App() {
                 <h2 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 animate-fade-in-up px-2">
                   <span className={'text-[#02060d]'}>Trusted by</span>
                   <br />
-                  <span className={"text-[#385cfc]"}>
+                  <span className={"text-[#3D67FF]"}>
                     Homeschooling Families
                   </span>
                 </h2>
@@ -700,12 +713,12 @@ function App() {
           </section>
 
           {/* CTA Section */}
-          <section className={`py-12 sm:py-16 lg:py-20 bg-gradient-to-r from-blue-400 via-gray-50 to-blue-400 transition-colors duration-300`}>
+          <section className={`py-12 sm:py-16 lg:py-20 bg-gradient-to-r from-blue-100 via-gray-50 to-blue-100 transition-colors duration-300`}>
             <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center scroll-animate">
               <h2 className={`text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-[#3D67FF] animate-fade-in-up px-2`}>
                 Ready to Transform Your
                 <br />
-                <span className={"text-[#385cfc]"}>
+                <span className={"text-[#3D67FF]"}>
                   Homeschooling Journey?
                 </span>
               </h2>
@@ -732,8 +745,8 @@ function App() {
         </>
       )}
 
-      {currentPage === 'dashboard' && <Dashboard isDarkMode={false} />} {/* Pass false for isDarkMode */}
-      {currentPage === 'recent-activity' && <RecentActivity isDarkMode={false} />} {/* Pass false for isDarkMode */}
+      {currentPage === 'dashboard' && <Dashboard />} {/* Pass false for isDarkMode */}
+      {currentPage === 'recent-activity' && <RecentActivity />} {/* Pass false for isDarkMode */}
 
       {/* Footer */}
       <footer className={`py-8 sm:py-10 lg:py-12 transition-colors duration-300 bg-[#3D67FF] border-[#3D67FF]`}>
@@ -792,7 +805,7 @@ function App() {
                 <li><a href="https://dumroo.ai/academy" className={`text-blue-100 hover:text-white transition-all duration-300 text-xs sm:text-sm hover:translate-x-1`}>Dumroo Academy</a></li>
                 <li><a href="https://pioneers.dumroo.ai/" className={`text-blue-100 hover:text-white transition-all duration-300 text-xs sm:text-sm hover:translate-x-1`}>Pioneer Teachers</a></li>
                 <li><a href="https://dumroo.ai/privacy" className={`text-blue-100 hover:text-white transition-all duration-300 text-xs sm:text-sm hover:translate-x-1`}>Privacy Policy</a></li>
-                <li><a href="https://qtiknlfjwgcshfrcqznk.supabase.co/storage/v1/object/sign/companyassets/Terms%20of%20Service%20v1.0.pdf?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJjb21wYW55YXNzZXRzL1Rlcm1zIG9mIFNlcnZpY2UgdjEuMC5wZGYiLCiYWF0IjoxNzQyMjAwMTUyLCJleHAiOjE4MDUyNzIxNTJ9.X1MgpS7g3Zj1Mpe513as_KMH5ak_pIWBNUQaEcE8aOo" className={`text-blue-100 hover:text-white transition-all duration-300 text-xs sm:text-sm hover:translate-x-1`}>Terms of Service</a></li>
+                <li><a href="https://qtiknlfjwgcshfrcqznk.supabase.co/storage/v1/object/sign/companyassets/Terms%20of%20Service%20v1.0.pdf?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJjb21wYW55YXNzZXRzL1Rlcm1zIG9mIFNlcnZpY2UgdjEuMC5wZGYiLCJpYXQiOjE3NDIyMDAxNTIsImV4cCI6MTgwNTI3MjE1Mn0.X1MgpS7g3Zj1Mpe513as_KMH5ak_pIWBNUQaEcE8aOo" className={`text-blue-100 hover:text-white transition-all duration-300 text-xs sm:text-sm hover:translate-x-1`}>Terms of Service</a></li>
                 <li><a href="https://help.dumroo.ai/" className={`text-blue-100 hover:text-white transition-all duration-300 text-xs sm:text-sm hover:translate-x-1`}>Help Center</a></li>
               </ul>
             </div>
