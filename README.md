@@ -1,2 +1,2 @@
-# homeschooling-v.2.0
-A landing page
+# homeschooling-v.1.0
+Its a landing page 
