@@ -287,7 +287,7 @@ function App() {
               </button>
               {/* End New Navigation Links */}
               {/* Changed Get Started button color to yellow */}
-              <a href="https://dumroo.ai/login" className={`bg-yellow-400 hover:bg-yellow-500 text-[#f5f5f5] px-4 lg:px-6 py-2 rounded-lg font-medium text-sm transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:-translate-y-0.5`}>
+              <a href="https://dumroo.ai/login" className={`bg-yellow-400 hover:bg-yellow-500 text-[#385cfc] px-4 lg:px-6 py-2 rounded-lg font-medium text-sm transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:-translate-y-0.5`}>
                 Get Started
               </a>
             </div>
@@ -328,7 +328,7 @@ function App() {
               </button>
               {/* End New Mobile Navigation Links */}
               {/* Removed dark mode toggle button */}
-              <a href="https://dumroo.ai/login" className="block w-full bg-gradient-to-r from-blue-400 to-blue-400 hover:from-blue-500 hover:to-blue-500 px-6 py-3 rounded-lg font-medium transition-all duration-300 text-center transform hover:scale-105 hover:shadow-lg text-white">
+              <a href="https://dumroo.ai/login" className="block w-full bg-gradient-to-r from-[#385cfc] to-[#385cfc] hover:from-[#385cfc] hover:to-[#385cfc] px-6 py-3 rounded-lg font-medium transition-all duration-300 text-center transform hover:scale-105 hover:shadow-lg text-white">
                 Get Started
               </a>
             </div>
@@ -370,11 +370,11 @@ function App() {
                 </p>
                 
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 pt-6 sm:pt-8 animate-fade-in-up animation-delay-400 px-4">
-                  <a href="https://dumroo.ai/login" className="w-full xs:w-auto sm:w-auto bg-gradient-to-r from-blue-400 to-blue-400 hover:from-blue-500 hover:to-blue-500 px-4 xs:px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-white text-sm xs:text-base sm:text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:-translate-y-1 flex items-center justify-center gap-2 group min-w-[140px]">
+                  <a href="https://dumroo.ai/login" className=" bg-[#385cfc] hover:bg-[#385cfc] px-4 xs:px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-white text-sm xs:text-base sm:text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:-translate-y-1 flex items-center justify-center gap-2 group min-w-[140px]">
                     Get Started
                     <ArrowRight className="w-3 xs:w-4 sm:w-5 h-3 xs:h-4 sm:h-5 group-hover:translate-x-1 transition-transform duration-300" />
                   </a>
-                  <button className={`w-full xs:w-auto sm:w-auto border border-gray-300 hover:border-gray-500 hover:bg-gray-100 px-4 xs:px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-sm xs:text-base sm:text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:-translate-y-0.5 min-w-[140px]`}>
+                  <button className={`w-full xs:w-auto sm:w-auto border border-[#385cfc] hover:border-[#385cfc] hover:bg-gray-0 px-4 xs:px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-[#385cfc] text-sm xs:text-base sm:text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:-translate-y-0.5 min-w-[140px]`}>
                     Watch Demo
                   </button>
                 </div>
@@ -518,7 +518,7 @@ function App() {
 
               {/* Call to action for this section */}
               <div className="text-center mt-8 sm:mt-12 lg:mt-16 scroll-animate animation-delay-500">
-                <a href="https://dumroo.ai/login" className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-400 to-blue-400 hover:from-blue-500 hover:to-blue-500 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg text-white transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:-translate-y-1 group">
+                <a href="https://dumroo.ai/login" className="inline-flex items-center gap-2 bg-gradient-to-r from-[#385cfc] to-[#385cfc] hover:from-[#385cfc] hover:to-[#385cfc] px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg text-white transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:-translate-y-1 group">
                   Start Your Journey
                   <ArrowRight className="w-4 sm:w-5 h-4 sm:h-5 group-hover:translate-x-1 transition-transform duration-300" />
                 </a>
@@ -605,7 +605,7 @@ function App() {
               <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
                 <div className={`text-center bg-white/70 border-gray-200 hover:border-gray-300 backdrop-blur-sm rounded-xl p-4 sm:p-6 lg:p-8 border transition-all duration-300 hover:transform hover:scale-105 hover:shadow-xl hover:-translate-y-2 group scroll-animate`}>
                   <div className="mb-4 sm:mb-6">
-                    <div className={`text-2xl xs:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold bg-clip-text text-transparent mb-1 sm:mb-2 group-hover:scale-110 transition-transform duration-300 text-[#141721]`}>
+                    <div className={`text-2xl xs:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold bg-clip-text text-transparent mb-1 sm:mb-2 group-hover:scale-110 transition-transform duration-300 text-[#070808]`}>
                       50%
                     </div>
                     <div className={`text-base sm:text-lg lg:text-xl font-semibold text-[#3D67FF] mb-1 sm:mb-2 group-hover:text-blue-400 transition-colors duration-300`}>
@@ -620,7 +620,7 @@ function App() {
 
                 <div className={`text-center bg-white/70 border-gray-200 hover:border-gray-300 backdrop-blur-sm rounded-xl p-4 sm:p-6 lg:p-8 border transition-all duration-300 hover:transform hover:scale-105 hover:shadow-xl hover:-translate-y-2 group scroll-animate animation-delay-100`}>
                   <div className="mb-4 sm:mb-6">
-                    <div className={`text-2xl xs:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold bg-clip-text text-transparent mb-1 sm:mb-2 group-hover:scale-110 transition-transform duration-300 text-[#141721]`}>
+                    <div className={`text-2xl xs:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold bg-clip-text text-transparent mb-1 sm:mb-2 group-hover:scale-110 transition-transform duration-300 text-[#08090b]`}>
                       85%
                     </div>
                     <div className={`text-base sm:text-lg lg:text-xl font-semibold text-[#3D67FF] mb-1 sm:mb-2 group-hover:text-blue-400 transition-colors duration-300`}>
@@ -635,7 +635,7 @@ function App() {
 
                 <div className={`text-center bg-white/70 border-gray-200 hover:border-gray-300 backdrop-blur-sm rounded-xl p-4 sm:p-6 lg:p-8 border transition-all duration-300 hover:transform hover:scale-105 hover:shadow-xl hover:-translate-y-2 group scroll-animate animation-delay-200`}>
                   <div className="mb-4 sm:mb-6">
-                    <div className={`text-2xl xs:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold bg-clip-text text-transparent mb-1 sm:mb-2 group-hover:scale-110 transition-transform duration-300 text-[#141721]`}>
+                    <div className={`text-2xl xs:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold bg-clip-text text-transparent mb-1 sm:mb-2 group-hover:scale-110 transition-transform duration-300 text-[#0b0c0f]`}>
                       90%
                     </div>
                     <div className={`text-base sm:text-lg lg:text-xl font-semibold text-[#3D67FF] mb-1 sm:mb-2 group-hover:text-teal-400 transition-colors duration-300`}>
@@ -650,7 +650,7 @@ function App() {
 
                 <div className={`text-center bg-white/70 border-gray-200 hover:border-gray-300 backdrop-blur-sm rounded-xl p-4 sm:p-6 lg:p-8 border transition-all duration-300 hover:transform hover:scale-105 hover:shadow-xl hover:-translate-y-2 group scroll-animate animation-delay-300`}>
                   <div className="mb-4 sm:mb-6">
-                    <div className={`text-2xl xs:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold bg-clip-text text-transparent mb-1 sm:mb-2 group-hover:scale-110 transition-transform duration-300 text-[#141721]`}>
+                    <div className={`text-2xl xs:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold bg-clip-text text-transparent mb-1 sm:mb-2 group-hover:scale-110 transition-transform duration-300 text-[#090a0c]`}>
                       100%
                     </div>
                     <div className={`text-base sm:text-lg lg:text-xl font-semibold text-[#3D67FF] mb-1 sm:mb-2 group-hover:text-blue-400 transition-colors duration-300`}>
@@ -713,31 +713,31 @@ function App() {
           </section>
 
           {/* CTA Section */}
-          <section className={`py-12 sm:py-16 lg:py-20 bg-gradient-to-r from-blue-100 via-gray-50 to-blue-100 transition-colors duration-300`}>
+          <section className={`py-12 sm:py-16 lg:py-20 bg-gradient-to-r from-[#385cfc] via-[#385cfc] to-[#385cfc] transition-colors duration-300`}>
             <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center scroll-animate">
-              <h2 className={`text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-[#3D67FF] animate-fade-in-up px-2`}>
+              <h2 className={`text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-[#e6e7eb] animate-fade-in-up px-2`}>
                 Ready to Transform Your
                 <br />
-                <span className={"text-[#3D67FF]"}>
+                <span className={"text-[#dedfe4]"}>
                   Homeschooling Journey?
                 </span>
               </h2>
               
-              <p className={`text-sm xs:text-base sm:text-lg md:text-xl text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto animate-fade-in-up animation-delay-200 px-4`}>
+              <p className={`text-sm xs:text-base sm:text-lg md:text-xl text-[#e6e7eb] mb-6 sm:mb-8 max-w-3xl mx-auto animate-fade-in-up animation-delay-200 px-4`}>
                 Join thousands of families who've already discovered the power of AI-assisted homeschooling. Start your free trial today.
               </p>
               
               <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 animate-fade-in-up animation-delay-400 px-4">
-                <a href="https://dumroo.ai/login" className="w-full xs:w-auto sm:w-auto bg-gradient-to-r from-blue-400 to-blue-400 hover:from-blue-500 hover:to-blue-500 px-4 xs:px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-white text-sm xs:text-base sm:text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:-translate-y-1 flex items-center justify-center gap-2 group min-w-[140px]">
+                <a href="https://dumroo.ai/login" className="w-full xs:w-auto sm:w-auto bg-gradient-to-r from-yellow-400 to-yellow-400 hover:from-yellow-500 hover:to-yellow-600 px-4 xs:px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-[#385cfc] text-sm xs:text-base sm:text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:-translate-y-1 flex items-center justify-center gap-2 group min-w-[140px]">
                   Get Started
                   <ArrowRight className="w-3 xs:w-4 sm:w-5 h-3 xs:h-4 sm:h-5 group-hover:translate-x-1 transition-transform duration-300" />
                 </a>
-                <button className={`w-full xs:w-auto sm:w-auto border border-gray-300 hover:border-gray-500 hover:bg-gray-100 px-4 xs:px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-sm xs:text-base sm:text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:-translate-y-0.5 min-w-[140px]`}>
+                <button className={`w-full xs:w-auto sm:w-auto border border-[#f7f8fc] hover:border-[#ecedf1] hover:bg-gray-0 px-4 xs:px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-[#e6e8f0] text-sm xs:text-base sm:text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:-translate-y-0.5 min-w-[140px]`}>
                   Schedule Demo
                 </button>
               </div>
               
-              <p className={`text-gray-500 mt-4 sm:mt-6 text-xs sm:text-sm animate-fade-in-up animation-delay-600 px-4`}>
+              <p className={`text-white mt-4 sm:mt-6 text-xs sm:text-sm animate-fade-in-up animation-delay-600 px-4`}>
                 No credit card required • Free to start • Cancel anytime
               </p>
             </div>
@@ -749,7 +749,7 @@ function App() {
       {currentPage === 'recent-activity' && <RecentActivity />} {/* Pass false for isDarkMode */}
 
       {/* Footer */}
-      <footer className={`py-8 sm:py-10 lg:py-12 transition-colors duration-300 bg-[#3D67FF] border-[#3D67FF]`}>
+      <footer className={`py-8 sm:py-10 lg:py-12 transition-colors duration-300 bg-[#181c24] border-[#181c24]`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-y-8 gap-x-4 sm:gap-x-6 lg:gap-x-8 mb-6 sm:mb-8">
             {/* Brand Section */}
@@ -840,7 +840,7 @@ function App() {
                   placeholder="Your email" 
                   className={`flex-1 p-2 rounded-md border bg-white border-gray-300 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-400 transition-colors duration-300 text-sm`}
                 />
-                <button className=" bg-yellow-400 hover:bg-yellow-500 px-4 py-2 rounded-md font-medium text-white text-sm transition-all duration-300 transform hover:scale-105">
+                <button className=" bg-yellow-400 hover:bg-yellow-500 px-4 py-2 rounded-md font-medium text-[#e2e3e7] text-sm transition-all duration-300 transform hover:scale-105">
                   Subscribe
                 </button>
               </div>
