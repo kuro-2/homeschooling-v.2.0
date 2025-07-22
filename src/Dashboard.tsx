@@ -20,18 +20,18 @@ function Dashboard() { // Removed isDarkMode prop
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full"> {/* Added w-full to make it take full width */}
         <div className="text-center mb-12 relative z-10">
-          <h2 className={`text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-[#385cfc]`}> {/* Changed text-blue-800 to #385cfc */}
+          <h2 className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-[#385cfc]`}> {/* Changed text-blue-800 to #385cfc */}
             Student Dashboard
           </h2>
-          <p className={`text-gray-600 text-lg max-w-3xl mx-auto`}> {/* Removed isDarkMode conditional class */}
+          <p className={`text-gray-600 text-sm sm:text-base lg:text-lg max-w-3xl mx-auto px-4`}> {/* Removed isDarkMode conditional class */}
             Comprehensive insights and analytics to track your student's educational journey
           </p>
         </div>
 
         {/* Key Metrics Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12 relative z-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-8 sm:mb-12 relative z-10">
           {metrics.map((metric, index) => (
-            <div key={index} className={`bg-white/70 border-gray-200 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border h-full flex flex-col`}> {/* Removed isDarkMode conditional class, added h-full and flex flex-col */}
+            <div key={index} className={`bg-white/70 border-gray-200 backdrop-blur-sm rounded-xl p-4 sm:p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border h-full flex flex-col`}> {/* Removed isDarkMode conditional class, added h-full and flex flex-col */}
               <div className={`w-12 h-12 rounded-lg flex items-center justify-center ${
                 metric.color === '#385cfc' ? 'bg-blue-100 text-[#385cfc]' : // Changed blue-600 to #385cfc
                 metric.color === 'green' ? 'bg-green-100 text-green-600' :
@@ -40,8 +40,8 @@ function Dashboard() { // Removed isDarkMode prop
               }`}>
                 <metric.icon className="w-6 h-6" />
               </div>
-              <h3 className={`text-2xl font-bold mb-1 text-gray-900`}>{metric.value}</h3> {/* Removed isDarkMode conditional class */}
-              <p className={`text-sm mb-2 text-gray-600`}>{metric.title}</p> {/* Removed isDarkMode conditional class */}
+              <h3 className={`text-xl sm:text-2xl font-bold mb-1 text-gray-900`}>{metric.value}</h3> {/* Removed isDarkMode conditional class */}
+              <p className={`text-xs sm:text-sm mb-2 text-gray-600`}>{metric.title}</p> {/* Removed isDarkMode conditional class */}
               <p className={`text-xs font-medium ${
                 metric.color === '#385cfc' ? 'text-[#385cfc]' : // Changed blue-400 to #385cfc
                 metric.color === 'green' ? 'text-green-400' :
@@ -53,14 +53,14 @@ function Dashboard() { // Removed isDarkMode prop
         </div>
 
         {/* Charts Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 mb-8 sm:mb-12 relative z-10">
           {/* Subject Distribution Chart */}
-          <div className={`bg-white/70 border-gray-200 backdrop-blur-sm rounded-xl p-6 shadow-lg border h-full flex flex-col`}> {/* Removed isDarkMode conditional class, added h-full and flex flex-col */}
-            <h3 className={`text-xl font-semibold mb-6 flex items-center text-gray-900`}> {/* Removed isDarkMode conditional class */}
+          <div className={`bg-white/70 border-gray-200 backdrop-blur-sm rounded-xl p-4 sm:p-6 shadow-lg border h-full flex flex-col`}> {/* Removed isDarkMode conditional class, added h-full and flex flex-col */}
+            <h3 className={`text-lg sm:text-xl font-semibold mb-4 sm:mb-6 flex items-center text-gray-900`}> {/* Removed isDarkMode conditional class */}
               <PieChart className="w-5 h-5 mr-2 text-[#385cfc]" /> {/* Changed blue-600 to #385cfc */}
               Subject Distribution
             </h3>
-            <div className="space-y-4 flex-grow"> {/* Added flex-grow */}
+            <div className="space-y-3 sm:space-y-4 flex-grow"> {/* Added flex-grow */}
               {[
                 { subject: "Mathematics", percentage: 25, color: "bg-[#385cfc]" }, // Changed bg-blue-500 to bg-[#385cfc]
                 { subject: "Science", percentage: 20, color: "bg-green-500" },
@@ -70,7 +70,7 @@ function Dashboard() { // Removed isDarkMode prop
                 { subject: "Other", percentage: 8, color: "bg-gray-500" }
               ].map((item, index) => (
                 <div key={index} className="flex items-center">
-                  <div className={`w-24 text-sm text-gray-600`}>{item.subject}</div> {/* Removed isDarkMode conditional class */}
+                  <div className={`w-16 sm:w-24 text-xs sm:text-sm text-gray-600`}>{item.subject}</div> {/* Removed isDarkMode conditional class */}
                   <div className="flex-1 mx-4">
                     <div className={`bg-gray-200 w-full rounded-full h-2`}> {/* Removed isDarkMode conditional class */}
                       <div 
@@ -79,19 +79,19 @@ function Dashboard() { // Removed isDarkMode prop
                       ></div>
                     </div>
                   </div>
-                  <div className={`w-12 text-sm font-medium text-gray-900`}>{item.percentage}%</div> {/* Removed isDarkMode conditional class */}
+                  <div className={`w-8 sm:w-12 text-xs sm:text-sm font-medium text-gray-900`}>{item.percentage}%</div> {/* Removed isDarkMode conditional class */}
                 </div>
               ))}
             </div>
           </div>
 
           {/* Learning Plan Progress */}
-          <div className={`bg-white/70 border-gray-200 backdrop-blur-sm rounded-xl p-6 shadow-lg border h-full flex flex-col`}> {/* Removed isDarkMode conditional class, added h-full and flex flex-col */}
-            <h3 className={`text-xl font-semibold mb-6 flex items-center text-gray-900`}> {/* Removed isDarkMode conditional class */}
+          <div className={`bg-white/70 border-gray-200 backdrop-blur-sm rounded-xl p-4 sm:p-6 shadow-lg border h-full flex flex-col`}> {/* Removed isDarkMode conditional class, added h-full and flex flex-col */}
+            <h3 className={`text-lg sm:text-xl font-semibold mb-4 sm:mb-6 flex items-center text-gray-900`}> {/* Removed isDarkMode conditional class */}
               <BarChart3 className="w-5 h-5 mr-2 text-green-600" />
               Learning Plan Progress
             </h3>
-            <div className="space-y-4 flex-grow"> {/* Added flex-grow */}
+            <div className="space-y-3 sm:space-y-4 flex-grow"> {/* Added flex-grow */}
               {[
                 { plan: "Algebra Fundamentals", progress: 85, status: "On Track" },
                 { plan: "Biology Basics", progress: 72, status: "Ahead" },
@@ -101,8 +101,8 @@ function Dashboard() { // Removed isDarkMode prop
               ].map((item, index) => (
                 <div key={index} className="space-y-2">
                   <div className="flex justify-between items-center">
-                    <span className={`text-sm font-medium text-gray-900`}>{item.plan}</span> {/* Removed isDarkMode conditional class */}
-                    <span className={`text-xs px-2 py-1 rounded-full ${
+                    <span className={`text-xs sm:text-sm font-medium text-gray-900 flex-1 mr-2`}>{item.plan}</span> {/* Removed isDarkMode conditional class */}
+                    <span className={`text-xs px-2 py-1 rounded-full whitespace-nowrap ${
                       item.status === 'Complete' ? 'bg-green-100 text-green-800' :
                       item.status === 'Ahead' ? 'bg-blue-100 text-[#385cfc]' : // Changed text-blue-800 to #385cfc
                       item.status === 'On Track' ? 'bg-yellow-100 text-yellow-800' :
@@ -128,14 +128,14 @@ function Dashboard() { // Removed isDarkMode prop
         </div>
 
         {/* Performance and Engagement Charts */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 relative z-10">
           {/* Performance Trends */}
-          <div className={`bg-white/70 border-gray-200 backdrop-blur-sm rounded-xl p-6 shadow-lg border h-full flex flex-col`}> {/* Removed isDarkMode conditional class, added h-full and flex flex-col */}
-            <h3 className={`text-xl font-semibold mb-6 flex items-center text-gray-900`}> {/* Removed isDarkMode conditional class */}
+          <div className={`bg-white/70 border-gray-200 backdrop-blur-sm rounded-xl p-4 sm:p-6 shadow-lg border h-full flex flex-col`}> {/* Removed isDarkMode conditional class, added h-full and flex flex-col */}
+            <h3 className={`text-lg sm:text-xl font-semibold mb-4 sm:mb-6 flex items-center text-gray-900`}> {/* Removed isDarkMode conditional class */}
               <TrendingUp className="w-5 h-5 mr-2 text-purple-600" />
               Performance Trends
             </h3>
-            <div className="space-y-4 flex-grow"> {/* Added flex-grow */}
+            <div className="space-y-3 sm:space-y-4 flex-grow"> {/* Added flex-grow */}
               {[
                 { month: "Jan", score: 78 },
                 { month: "Feb", score: 82 },
@@ -144,15 +144,15 @@ function Dashboard() { // Removed isDarkMode prop
                 { month: "May", score: 91 }
               ].map((item, index) => (
                 <div key={index} className="flex items-center justify-between">
-                  <span className={`text-sm text-gray-600`}>{item.month}</span> {/* Removed isDarkMode conditional class */}
+                  <span className={`text-xs sm:text-sm text-gray-600`}>{item.month}</span> {/* Removed isDarkMode conditional class */}
                   <div className="flex items-center space-x-2">
-                    <div className={`bg-gray-200 w-20 rounded-full h-2`}> {/* Removed isDarkMode conditional class */}
+                    <div className={`bg-gray-200 w-16 sm:w-20 rounded-full h-2`}> {/* Removed isDarkMode conditional class */}
                       <div 
                         className="h-2 bg-purple-500 rounded-full"
                         style={{ width: `${item.score}%` }}
                       ></div>
                     </div>
-                    <span className={`text-sm font-medium text-gray-900 w-8`}>{item.score}</span> {/* Removed isDarkMode conditional class */}
+                    <span className={`text-xs sm:text-sm font-medium text-gray-900 w-6 sm:w-8`}>{item.score}</span> {/* Removed isDarkMode conditional class */}
                   </div>
                 </div>
               ))}
@@ -160,12 +160,12 @@ function Dashboard() { // Removed isDarkMode prop
           </div>
 
           {/* Student Performance */}
-          <div className={`bg-white/70 border-gray-200 backdrop-blur-sm rounded-xl p-6 shadow-lg border h-full flex flex-col`}> {/* Removed isDarkMode conditional class, added h-full and flex flex-col */}
-            <h3 className={`text-xl font-semibold mb-6 flex items-center text-gray-900`}> {/* Removed isDarkMode conditional class */}
+          <div className={`bg-white/70 border-gray-200 backdrop-blur-sm rounded-xl p-4 sm:p-6 shadow-lg border h-full flex flex-col`}> {/* Removed isDarkMode conditional class, added h-full and flex flex-col */}
+            <h3 className={`text-lg sm:text-xl font-semibold mb-4 sm:mb-6 flex items-center text-gray-900`}> {/* Removed isDarkMode conditional class */}
               <Award className="w-5 h-5 mr-2 text-yellow-600" />
               Student Performance
             </h3>
-            <div className="space-y-4 flex-grow"> {/* Added flex-grow */}
+            <div className="space-y-3 sm:space-y-4 flex-grow"> {/* Added flex-grow */}
               {[
                 { category: "Assignments", score: 92, grade: "A-" },
                 { category: "Quizzes", score: 88, grade: "B+" },
@@ -174,10 +174,10 @@ function Dashboard() { // Removed isDarkMode prop
                 { category: "Overall", score: 90, grade: "A-" }
               ].map((item, index) => (
                 <div key={index} className="flex items-center justify-between">
-                  <span className={`text-sm text-gray-600`}>{item.category}</span> {/* Removed isDarkMode conditional class */}
+                  <span className={`text-xs sm:text-sm text-gray-600 flex-1`}>{item.category}</span> {/* Removed isDarkMode conditional class */}
                   <div className="flex items-center space-x-3">
-                    <span className={`text-sm font-medium text-gray-900`}>{item.score}%</span> {/* Removed isDarkMode conditional class */}
-                    <span className={`text-sm font-bold px-2 py-1 rounded ${
+                    <span className={`text-xs sm:text-sm font-medium text-gray-900`}>{item.score}%</span> {/* Removed isDarkMode conditional class */}
+                    <span className={`text-xs sm:text-sm font-bold px-2 py-1 rounded ${
                       item.grade.startsWith('A') ? 'bg-green-100 text-green-800' :
                       item.grade.startsWith('B') ? 'bg-blue-100 text-[#385cfc]' : // Changed text-blue-800 to #385cfc
                       'bg-yellow-100 text-yellow-800'
@@ -189,12 +189,12 @@ function Dashboard() { // Removed isDarkMode prop
           </div>
 
           {/* Engagement Metrics */}
-          <div className={`bg-white/70 border-gray-200 backdrop-blur-sm rounded-xl p-6 shadow-lg border h-full flex flex-col`}> {/* Removed isDarkMode conditional class, added h-full and flex flex-col */}
-            <h3 className={`text-xl font-semibold mb-6 flex items-center text-gray-900`}> {/* Removed isDarkMode conditional class */}
+          <div className={`bg-white/70 border-gray-200 backdrop-blur-sm rounded-xl p-4 sm:p-6 shadow-lg border h-full flex flex-col md:col-span-2 lg:col-span-1`}> {/* Removed isDarkMode conditional class, added h-full and flex flex-col */}
+            <h3 className={`text-lg sm:text-xl font-semibold mb-4 sm:mb-6 flex items-center text-gray-900`}> {/* Removed isDarkMode conditional class */}
               <Activity className="w-5 h-5 mr-2 text-teal-600" />
               Engagement Metrics
             </h3>
-            <div className="space-y-4 flex-grow"> {/* Added flex-grow */}
+            <div className="space-y-3 sm:space-y-4 flex-grow"> {/* Added flex-grow */}
               {[
                 { metric: "Daily Login", value: "95%", trend: "up" },
                 { metric: "Time on Task", value: "4.2h", trend: "up" },
@@ -203,9 +203,9 @@ function Dashboard() { // Removed isDarkMode prop
                 { metric: "Help Requests", value: "3", trend: "down" }
               ].map((item, index) => (
                 <div key={index} className="flex items-center justify-between">
-                  <span className={`text-sm text-gray-600`}>{item.metric}</span> {/* Removed isDarkMode conditional class */}
+                  <span className={`text-xs sm:text-sm text-gray-600 flex-1`}>{item.metric}</span> {/* Removed isDarkMode conditional class */}
                   <div className="flex items-center space-x-2">
-                    <span className={`text-sm font-medium text-gray-900`}>{item.value}</span> {/* Removed isDarkMode conditional class */}
+                    <span className={`text-xs sm:text-sm font-medium text-gray-900`}>{item.value}</span> {/* Removed isDarkMode conditional class */}
                     <div className={`w-2 h-2 rounded-full ${
                       item.trend === 'up' ? 'bg-green-500' :
                       item.trend === 'down' ? 'bg-red-500' :
