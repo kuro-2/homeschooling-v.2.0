@@ -202,7 +202,7 @@ function App() {
   };
 
   return (
-    <div className={`bg-gray-50 text-gray-900 overflow-x-hidden transition-colors duration-300`}>
+    <div className={`bg-gray-50 text-white overflow-x-hidden transition-colors duration-300`}>
       {/* Custom Scrollbar Styles */}
       <style>
         {`
@@ -306,29 +306,29 @@ function App() {
           <div className={`md:hidden bg-[#3D67FF] border-[#3D67FF] border-t transition-all duration-300 animate-slide-down`}>
             <div className="px-4 py-4 space-y-4">
               {/* Updated mobile navigation links */}
-              <button onClick={() => handleNavLinkClick('home', 'about')} className={`block text-white hover:text-blue-200 transition-all duration-300 hover:translate-x-2 hover:scale-105`}>About Us</button>
-              <button onClick={() => handleNavLinkClick('home', 'how-it-works')} className={`block text-white hover:text-blue-200 transition-all duration-300 hover:translate-x-2 hover:scale-105`}>How It Works</button>
-              <button onClick={() => handleNavLinkClick('home', 'ai-tools')} className={`block text-white hover:text-blue-200 transition-all duration-300 hover:translate-x-2 hover:scale-105`}>AI Tools</button>
-              <button onClick={() => handleNavLinkClick('home', 'why-choose-us')} className={`block text-white hover:text-blue-200 transition-all duration-300 hover:translate-x-2 hover:scale-105`}>Why Choose Us?</button>
-              <button onClick={() => handleNavLinkClick('home', 'testimonials')} className={`block text-white hover:text-blue-200 transition-all duration-300 hover:translate-x-2 hover:scale-105`}>Testimonials</button>
+              <button onClick={() => handleNavLinkClick('home', 'about')} className={`block text-white hover:text-yellow-400 transition-all duration-300 hover:translate-x-2 hover:scale-105`}>About Us</button>
+              <button onClick={() => handleNavLinkClick('home', 'how-it-works')} className={`block text-white hover:text-yellow-400 transition-all duration-300 hover:translate-x-2 hover:scale-105`}>How It Works</button>
+              <button onClick={() => handleNavLinkClick('home', 'ai-tools')} className={`block text-white hover:text-yellow-200 transition-all duration-300 hover:translate-x-2 hover:scale-105`}>AI Tools</button>
+              <button onClick={() => handleNavLinkClick('home', 'why-choose-us')} className={`block text-white hover:text-yellow-400 transition-all duration-300 hover:translate-x-2 hover:scale-105`}>Why Choose Us?</button>
+              <button onClick={() => handleNavLinkClick('home', 'testimonials')} className={`block text-white hover:text-yellow-400 transition-all duration-300 hover:translate-x-2 hover:scale-105`}>Testimonials</button>
               {/* New Mobile Navigation Links */}
               <button 
                 onClick={() => handleNavLinkClick('dashboard')} 
-                className={`flex items-center gap-2 text-white hover:text-blue-200 transition-all duration-300 hover:translate-x-2 hover:scale-105`}
+                className={`flex items-center gap-2 text-white hover:text-yellow-400 transition-all duration-300 hover:translate-x-2 hover:scale-105`}
               >
                 <BarChart3 className="w-5 h-5" />
                 Dashboard
               </button>
               <button 
                 onClick={() => handleNavLinkClick('recent-activity')} 
-                className={`flex items-center gap-2 text-white hover:text-blue-200 transition-all duration-300 hover:translate-x-2 hover:scale-105`}
+                className={`flex items-center gap-2 text-white hover:text-yellow-400 transition-all duration-300 hover:translate-x-2 hover:scale-105`}
               >
                 <Activity className="w-5 h-5" />
                 Recent Activity
               </button>
               {/* End New Mobile Navigation Links */}
               {/* Removed dark mode toggle button */}
-              <a href="https://dumroo.ai/login" className="block w-full bg-gradient-to-r from-[#385cfc] to-[#385cfc] hover:from-[#385cfc] hover:to-[#385cfc] px-6 py-3 rounded-lg font-medium transition-all duration-300 text-center transform hover:scale-105 hover:shadow-lg text-white">
+              <a href="https://dumroo.ai/login" className="block w-full bg-gradient-to-r from-yellow-500 to-yellow-500 px-6 py-3 rounded-lg font-medium transition-all duration-300 text-center transform hover:scale-105 hover:shadow-lg text-[#385cfc]">
                 Get Started
               </a>
             </div>
