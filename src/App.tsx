@@ -71,28 +71,28 @@ function App() {
       title: "Add a Student",
       description: "Simple onboarding process that creates personalized learning profiles for each student in minutes.",
       image: "https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=800",
-      gradient: "from-blue-600 to-blue-600"
+      gradient: "from-[#385cfc] to-[#385cfc]"
     },
     {
       icon: BookOpen,
       title: "Syllabus AI",
       description: "Intelligent curriculum builder that structures comprehensive learning paths tailored to your educational goals.",
       image: "https://images.pexels.com/photos/8613297/pexels-photo-8613297.jpeg?auto=compress&cs=tinysrgb&w=800",
-      gradient: "from-blue-600 to-teal-600"
+      gradient: "from-[#385cfc] to-[#385cfc]"
     },
     {
       icon: Calendar,
       title: "Planning AI",
       description: "Smart scheduling that auto-plans lessons week-by-week with adaptable timelines that fit your family's rhythm.",
       image: "https://images.pexels.com/photos/8613202/pexels-photo-8613202.jpeg?auto=compress&cs=tinysrgb&w=800",
-      gradient: "from-teal-600 to-blue-600"
+      gradient: "from-[#385cfc] to-[#385cfc]"
     },
     {
       icon: Sparkles,
       title: "Personalize AI",
       description: "The magic of AI personalization—customized to each student's unique pace, learning style, and interests.",
       image: "https://images.pexels.com/photos/8613264/pexels-photo-8613264.jpeg?auto=compress&cs=tinysrgb&w=800",
-      gradient: "from-blue-600 to-blue-600"
+      gradient: "from-[#385cfc] to-[#385cfc]"
     }
   ];
 
@@ -101,25 +101,25 @@ function App() {
       icon: Brain,
       title: "AI Curriculum Assistant",
       description: "Get personalized curriculum planning and lesson design assistance",
-      gradient: "from-blue-400 to-blue-400"
+      gradient: "from-[#385cfc] to-[#385cfc]"
     },
     {
       icon: Target,
       title: "Learning Path Designer",
       description: "Create customized learning paths for each child",
-      gradient: "from-blue-600 to-blue-600"
+      gradient: "from-[#385cfc] to-[#385cfc]"
     },
     {
       icon: BarChart3,
       title: "Progress Tracking",
       description: "Monitor learning progress with detailed analytics",
-      gradient: "from-teal-600 to-blue-600"
+      gradient: "from-[#385cfc] to-[#385cfc]"
     },
     {
       icon: Library,
       title: "Resource Library",
       description: "Access curated educational resources and materials",
-      gradient: "from-blue-600 to-teal-600"
+      gradient: "from-[#385cfc] to-[#385cfc]"
     }
   ];
 
@@ -146,7 +146,7 @@ function App() {
         "Progress monitoring",
         "Resource suggestions"
       ],
-      gradient: "from-blue-600 to-teal-600"
+      gradient: "from-blue-400 to-blue-400"
     },
     {
       title: "Personalize AI",
@@ -158,7 +158,7 @@ function App() {
         "Difficulty adjustment",
         "Engagement optimization"
       ],
-      gradient: "from-blue-600 to-blue-600"
+      gradient: "from-blue-400 to-blue-400"
     }
   ];
 
@@ -250,40 +250,40 @@ function App() {
             
             <div className="hidden md:flex items-center space-x-8">
               {/* Updated navigation links to use handleNavLinkClick with sectionId */}
-              <button onClick={() => handleNavLinkClick('home', 'about')} className={`text-white hover:text-blue-200 transition-all duration-300 hover:scale-105 relative group`}>
+              <button onClick={() => handleNavLinkClick('home', 'about')} className={`text-white hover:text-yellow-400 transition-all duration-300 hover:scale-105 relative group`}>
                 About Us
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-300 to-blue-300 group-hover:w-full transition-all duration-300"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-yellow-400 to-yellow-400 group-hover:w-full transition-all duration-300"></span>
               </button>
-              <button onClick={() => handleNavLinkClick('home', 'how-it-works')} className={`text-white hover:text-blue-200 transition-all duration-300 hover:scale-105 relative group`}>
+              <button onClick={() => handleNavLinkClick('home', 'how-it-works')} className={`text-white hover:text-yellow-400 transition-all duration-300 hover:scale-105 relative group`}>
                 How It Works
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-300 to-blue-300 group-hover:w-full transition-all duration-300"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-yellow-400 to-yellow-400 group-hover:w-full transition-all duration-300"></span>
               </button>
-              <button onClick={() => handleNavLinkClick('home', 'ai-tools')} className={`text-white hover:text-blue-200 transition-all duration-300 hover:scale-105 relative group`}>
+              <button onClick={() => handleNavLinkClick('home', 'ai-tools')} className={`text-white hover:text-yellow-400 transition-all duration-300 hover:scale-105 relative group`}>
                 AI Tools
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-300 to-blue-300 group-hover:w-full transition-all duration-300"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-yellow-400 to-yellow-400 group-hover:w-full transition-all duration-300"></span>
               </button>
-              <button onClick={() => handleNavLinkClick('home', 'why-choose-us')} className={`text-white hover:text-blue-200 transition-all duration-300 hover:scale-105 relative group`}>
+              <button onClick={() => handleNavLinkClick('home', 'why-choose-us')} className={`text-white hover:text-yellow-400 transition-all duration-300 hover:scale-105 relative group`}>
                 Why Choose Us?
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-300 to-blue-300 group-hover:w-full transition-all duration-300"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-yellow-400 to-yellow-400 group-hover:w-full transition-all duration-300"></span>
               </button>
-              <button onClick={() => handleNavLinkClick('home', 'testimonials')} className={`text-white hover:text-blue-200 transition-all duration-300 hover:scale-105 relative group`}>
+              <button onClick={() => handleNavLinkClick('home', 'testimonials')} className={`text-white hover:text-yellow-400 transition-all duration-300 hover:scale-105 relative group`}>
                 Testimonials
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-300 to-blue-300 group-hover:w-full transition-all duration-300"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-yellow-400 to-yellow-400 group-hover:w-full transition-all duration-300"></span>
               </button>
               {/* New Navigation Links */}
               <button 
                 onClick={() => handleNavLinkClick('dashboard')} 
-                className={`text-white hover:text-blue-200 transition-all duration-300 hover:scale-105 relative group`}
+                className={`text-white hover:text-yellow-400 transition-all duration-300 hover:scale-105 relative group`}
               >
                 Dashboard
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-300 to-blue-300 group-hover:w-full transition-all duration-300"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-yellow-400 to-yellow-400 group-hover:w-full transition-all duration-300"></span>
               </button>
               <button 
                 onClick={() => handleNavLinkClick('recent-activity')} 
-                className={`text-white hover:text-blue-200 transition-all duration-300 hover:scale-105 relative group`}
+                className={`text-white hover:text-yellow-400 transition-all duration-300 hover:scale-105 relative group`}
               >
                 Activity
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-300 to-blue-300 group-hover:w-full transition-all duration-300"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-yellow-400 to-yellow-400 group-hover:w-full transition-all duration-300"></span>
               </button>
               {/* End New Navigation Links */}
               {/* Changed Get Started button color to yellow */}
@@ -374,9 +374,9 @@ function App() {
                     Get Started
                     <ArrowRight className="w-3 xs:w-4 sm:w-5 h-3 xs:h-4 sm:h-5 group-hover:translate-x-1 transition-transform duration-300" />
                   </a>
-                  <button className={`w-full xs:w-auto sm:w-auto border border-[#385cfc] hover:border-[#385cfc] hover:bg-gray-0 px-4 xs:px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-[#385cfc] text-sm xs:text-base sm:text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:-translate-y-0.5 min-w-[140px]`}>
+                  <a href="https://dumroo.ai/contact" className={`w-full xs:w-auto sm:w-auto border border-[#385cfc] hover:border-[#385cfc] hover:bg-gray-0 px-4 xs:px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-[#385cfc] text-sm xs:text-base sm:text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:-translate-y-0.5 min-w-[140px]`}>
                     Watch Demo
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -405,7 +405,7 @@ function App() {
                       <feature.icon className="w-5 sm:w-6 lg:w-8 h-5 sm:h-6 lg:h-8 text-white" />
                     </div>
                     
-                    <h3 className={`text-base sm:text-lg lg:text-xl font-bold text-[#3D67FF] mb-2 sm:mb-3 lg:mb-4 group-hover:text-blue-400 transition-colors duration-300`}>
+                    <h3 className={`text-base sm:text-lg lg:text-xl font-bold text-[#3D67FF] mb-2 sm:mb-3 lg:mb-4 group-hover:text-[#3D67FF] transition-colors duration-300`}>
                       {feature.title}
                     </h3>
                     
@@ -436,19 +436,16 @@ function App() {
               <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
                 {/* Step 1: Add Student */}
                 <div className="text-center scroll-animate">
-                  <div className={`relative mx-auto w-24 xs:w-28 sm:w-32 h-24 xs:h-28 sm:h-32 mb-4 sm:mb-6 bg-white/80 rounded-full flex items-center justify-center border-2 sm:border-4 border-blue-200/30 hover:border-blue-400/50 transition-all duration-300 group`}>
+                  <div className={`relative mx-auto w-24 xs:w-28 sm:w-32 h-24 xs:h-28 sm:h-32 mb-4 sm:mb-6 bg-white/80 rounded-full flex items-center justify-center border-2 sm:border-4 border-blue-200/30 hover:border-blue-700/50 transition-all duration-300 group`}>
                     {/* Animated background circles */}
                     <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-200/20 to-blue-200/20 animate-pulse-slow"></div>
                     <div className="absolute inset-1 sm:inset-2 rounded-full bg-gradient-to-r from-blue-300/10 to-blue-300/10 group-hover:scale-110 transition-transform duration-300"></div>
                     
                     {/* Icon with number */}
                     <div className="relative z-10 flex flex-col items-center">
-                      <UserPlus className="w-8 xs:w-10 sm:w-12 h-8 xs:h-10 sm:h-12 text-blue-400 mb-1 sm:mb-2 group-hover:scale-110 transition-transform duration-300" />
+                      <UserPlus className="w-8 xs:w-10 sm:w-12 h-8 xs:h-10 sm:h-12 text-blue-500 mb-1 sm:mb-2 group-hover:scale-110 transition-transform duration-300" />
                       <span className="text-xs font-bold bg-gradient-to-r from-blue-400 to-blue-400 text-white px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-full">1</span>
                     </div>
-                    
-                    {/* Connecting line */}
-                    <div className="hidden lg:block absolute top-1/2 -right-6 xl:-right-8 w-12 xl:w-16 h-0.5 bg-gradient-to-r from-blue-400/50 to-transparent"></div>
                   </div>
                   
                   <h3 className={`text-base sm:text-lg lg:text-xl font-bold text-[#3D67FF] mb-2 sm:mb-3 px-2`}>Add Student</h3>
@@ -459,16 +456,14 @@ function App() {
 
                 {/* Step 2: Generate Syllabus */}
                 <div className="text-center scroll-animate animation-delay-200">
-                  <div className={`relative mx-auto w-24 xs:w-28 sm:w-32 h-24 xs:h-28 sm:h-32 mb-4 sm:mb-6 bg-white/80 rounded-full flex items-center justify-center border-2 sm:border-4 border-blue-200/30 hover:border-blue-400/50 transition-all duration-300 group`}>
-                    <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-400/20 to-teal-400/20 animate-pulse-slow animation-delay-100"></div>
-                    <div className="absolute inset-1 sm:inset-2 rounded-full bg-gradient-to-r from-blue-500/10 to-teal-500/10 group-hover:scale-110 transition-transform duration-300"></div>
+                  <div className={`relative mx-auto w-24 xs:w-28 sm:w-32 h-24 xs:h-28 sm:h-32 mb-4 sm:mb-6 bg-white/80 rounded-full flex items-center justify-center border-2 sm:border-4 border-blue-200/30 hover:border-blue-700/50 transition-all duration-300 group`}>
+                    <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-200/20 to-blue-200/20 animate-pulse-slow animation-delay-100"></div>
+                    <div className="absolute inset-1 sm:inset-2 rounded-full bg-gradient-to-r from-blue-300/10 to-blue-300/10 group-hover:scale-110 transition-transform duration-300"></div>
                     
                     <div className="relative z-10 flex flex-col items-center">
                       <FileText className="w-8 xs:w-10 sm:w-12 h-8 xs:h-10 sm:h-12 text-blue-500 mb-1 sm:mb-2 group-hover:scale-110 transition-transform duration-300" />
-                      <span className="text-xs font-bold bg-gradient-to-r from-blue-600 to-teal-600 text-white px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-full">2</span>
-                    </div>
-                    
-                    <div className="hidden lg:block absolute top-1/2 -right-6 xl:-right-8 w-12 xl:w-16 h-0.5 bg-gradient-to-r from-blue-400/50 to-transparent"></div>
+                      <span className="text-xs font-bold bg-gradient-to-r from-blue-400 to-blue-400 text-white px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-full">2</span>
+                    </div>                    
                   </div>
                   
                   <h3 className={`text-base sm:text-lg lg:text-xl font-bold text-[#3D67FF] mb-2 sm:mb-3 px-2`}>Generate Syllabus</h3>
@@ -479,17 +474,15 @@ function App() {
 
                 {/* Step 3: Plan Lessons */}
                 <div className="text-center scroll-animate animation-delay-300">
-                  <div className={`relative mx-auto w-24 xs:w-28 sm:w-32 h-24 xs:h-28 sm:h-32 mb-4 sm:mb-6 bg-white/80 rounded-full flex items-center justify-center border-2 sm:border-4 border-teal-200/30 hover:border-teal-400/50 transition-all duration-300 group`}>
-                    <div className="absolute inset-0 rounded-full bg-gradient-to-r from-teal-400/20 to-blue-400/20 animate-pulse-slow animation-delay-200"></div>
-                    <div className="absolute inset-1 sm:inset-2 rounded-full bg-gradient-to-r from-teal-500/10 to-blue-500/10 group-hover:scale-110 transition-transform duration-300"></div>
+                  <div className={`relative mx-auto w-24 xs:w-28 sm:w-32 h-24 xs:h-28 sm:h-32 mb-4 sm:mb-6 bg-white/80 rounded-full flex items-center justify-center border-2 sm:border-4  border-blue-200/30 hover:border-blue-700/50 transition-all duration-300 group`}>
+                    <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-200/20 to-blue-200/20 animate-pulse-slow animation-delay-200"></div>
+                    <div className="absolute inset-1 sm:inset-2 rounded-full bg-gradient-to-r from-blue-300/10 to-blue-300/10 group-hover:scale-110 transition-transform duration-300"></div>
                     
                     <div className="relative z-10 flex flex-col items-center">
-                      <Calendar className="w-8 xs:w-10 sm:w-12 h-8 xs:h-10 sm:h-12 text-teal-500 mb-1 sm:mb-2 group-hover:scale-110 transition-transform duration-300" />
-                      <span className="text-xs font-bold bg-gradient-to-r from-teal-600 to-blue-600 text-white px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-full">3</span>
+                      <Calendar className="w-8 xs:w-10 sm:w-12 h-8 xs:h-10 sm:h-12 text-blue-500 mb-1 sm:mb-2 group-hover:scale-110 transition-transform duration-300" />
+                      <span className="text-xs font-bold bg-gradient-to-r from-blue-400 to-blue-400 text-white px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-full">3</span>
                     </div>
-                    
-                    <div className="hidden lg:block absolute top-1/2 -right-6 xl:-right-8 w-12 xl:w-16 h-0.5 bg-gradient-to-r from-blue-400/50 to-transparent"></div>
-                  </div>
+                </div>
                   
                   <h3 className={`text-base sm:text-lg lg:text-xl font-bold text-[#3D67FF] mb-2 sm:mb-3 px-2`}>Plan Lessons</h3>
                   <p className={`text-xs sm:text-sm text-gray-600 leading-relaxed px-2`}>
@@ -499,7 +492,7 @@ function App() {
 
                 {/* Step 4: Personalize Learning */}
                 <div className="text-center scroll-animate animation-delay-400">
-                  <div className={`relative mx-auto w-24 xs:w-28 sm:w-32 h-24 xs:h-28 sm:h-32 mb-4 sm:mb-6 bg-white/80 rounded-full flex items-center justify-center border-2 sm:border-4 border-blue-200/30 hover:border-blue-400/50 transition-all duration-300 group`}>
+                  <div className={`relative mx-auto w-24 xs:w-28 sm:w-32 h-24 xs:h-28 sm:h-32 mb-4 sm:mb-6 bg-white/80 rounded-full flex items-center justify-center border-2 sm:border-4 border-blue-200/30 hover:border-blue-700/50 transition-all duration-300 group`}>
                     <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-200/20 to-blue-200/20 animate-pulse-slow animation-delay-300"></div>
                     <div className="absolute inset-1 sm:inset-2 rounded-full bg-gradient-to-r from-blue-300/10 to-blue-300/10 group-hover:scale-110 transition-transform duration-300"></div>
                     
@@ -560,7 +553,7 @@ function App() {
                     </div>
                     
                     <div className="p-3 xs:p-4 sm:p-6 lg:p-8">
-                      <h3 className={`text-base xs:text-lg sm:text-xl lg:text-2xl font-bold text-[#3D67FF] mb-2 sm:mb-3 lg:mb-4 group-hover:text-blue-400 transition-colors duration-300`}>
+                      <h3 className={`text-base xs:text-lg sm:text-xl lg:text-2xl font-bold text-[#3D67FF] mb-2 sm:mb-3 lg:mb-4 group-hover:[#3D67FF] transition-colors duration-300`}>
                         {tool.title}
                       </h3>
                       
@@ -605,55 +598,55 @@ function App() {
               <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
                 <div className={`text-center bg-white/70 border-gray-200 hover:border-gray-300 backdrop-blur-sm rounded-xl p-4 sm:p-6 lg:p-8 border transition-all duration-300 hover:transform hover:scale-105 hover:shadow-xl hover:-translate-y-2 group scroll-animate`}>
                   <div className="mb-4 sm:mb-6">
-                    <div className={`text-2xl xs:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold bg-clip-text text-transparent mb-1 sm:mb-2 group-hover:scale-110 transition-transform duration-300 text-[#070808]`}>
+                    <div className={`text-2xl xs:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-1 sm:mb-2 group-hover:scale-110 transition-transform duration-300 text-[#070808]`}>
                       50%
                     </div>
-                    <div className={`text-base sm:text-lg lg:text-xl font-semibold text-[#3D67FF] mb-1 sm:mb-2 group-hover:text-blue-400 transition-colors duration-300`}>
+                    <div className={`text-base sm:text-lg lg:text-xl font-semibold text-[#3D67FF] mb-1 sm:mb-2 group-hover:text-blue-600 transition-colors duration-300`}>
                       Time Saved
                     </div>
                     <p className={`text-xs sm:text-sm lg:text-base text-gray-600`}>
                       Reduce planning time by up to 50%
                     </p>
                   </div>
-                  <div className="w-8 sm:w-12 lg:w-16 h-0.5 sm:h-1 bg-gradient-to-r from-blue-400 to-blue-400 mx-auto rounded-full group-hover:w-12 sm:group-hover:w-16 lg:group-hover:w-20 transition-all duration-300"></div>
+                  <div className="w-8 sm:w-12 lg:w-16 h-0.5 sm:h-1 bg-gradient-to-r from-blue-500 to-blue-500 mx-auto rounded-full group-hover:w-12 sm:group-hover:w-16 lg:group-hover:w-20 transition-all duration-300"></div>
                 </div>
 
                 <div className={`text-center bg-white/70 border-gray-200 hover:border-gray-300 backdrop-blur-sm rounded-xl p-4 sm:p-6 lg:p-8 border transition-all duration-300 hover:transform hover:scale-105 hover:shadow-xl hover:-translate-y-2 group scroll-animate animation-delay-100`}>
                   <div className="mb-4 sm:mb-6">
-                    <div className={`text-2xl xs:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold bg-clip-text text-transparent mb-1 sm:mb-2 group-hover:scale-110 transition-transform duration-300 text-[#08090b]`}>
+                    <div className={`text-2xl xs:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-1 sm:mb-2 group-hover:scale-110 transition-transform duration-300 text-[#08090b]`}>
                       85%
                     </div>
-                    <div className={`text-base sm:text-lg lg:text-xl font-semibold text-[#3D67FF] mb-1 sm:mb-2 group-hover:text-blue-400 transition-colors duration-300`}>
+                    <div className={`text-base sm:text-lg lg:text-xl font-semibold text-[#3D67FF] mb-1 sm:mb-2 group-hover:text-blue-600 transition-colors duration-300`}>
                       Better Outcomes
                     </div>
                     <p className={`text-xs sm:text-sm lg:text-base text-gray-600`}>
                       Improved learning results
                     </p>
                   </div>
-                  <div className="w-8 sm:w-12 lg:w-16 h-0.5 sm:h-1 bg-gradient-to-r from-blue-500 to-teal-500 mx-auto rounded-full group-hover:w-12 sm:group-hover:w-16 lg:group-hover:w-20 transition-all duration-300"></div>
+                  <div className="w-8 sm:w-12 lg:w-16 h-0.5 sm:h-1 bg-gradient-to-r from-blue-500 to-blue-500 mx-auto rounded-full group-hover:w-12 sm:group-hover:w-16 lg:group-hover:w-20 transition-all duration-300"></div>
                 </div>
 
                 <div className={`text-center bg-white/70 border-gray-200 hover:border-gray-300 backdrop-blur-sm rounded-xl p-4 sm:p-6 lg:p-8 border transition-all duration-300 hover:transform hover:scale-105 hover:shadow-xl hover:-translate-y-2 group scroll-animate animation-delay-200`}>
                   <div className="mb-4 sm:mb-6">
-                    <div className={`text-2xl xs:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold bg-clip-text text-transparent mb-1 sm:mb-2 group-hover:scale-110 transition-transform duration-300 text-[#0b0c0f]`}>
+                    <div className={`text-2xl xs:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-1 sm:mb-2 group-hover:scale-110 transition-transform duration-300 text-[#0b0c0f]`}>
                       90%
                     </div>
-                    <div className={`text-base sm:text-lg lg:text-xl font-semibold text-[#3D67FF] mb-1 sm:mb-2 group-hover:text-teal-400 transition-colors duration-300`}>
+                    <div className={`text-base sm:text-lg lg:text-xl font-semibold text-[#3D67FF] mb-1 sm:mb-2 group-hover:text-blue-600 transition-colors duration-300`}>
                       Engagement
                     </div>
                     <p className={`text-xs sm:text-sm lg:text-base text-gray-600`}>
                       Increased student engagement
                     </p>
                   </div>
-                  <div className="w-8 sm:w-12 lg:w-16 h-0.5 sm:h-1 bg-gradient-to-r from-teal-500 to-blue-500 mx-auto rounded-full group-hover:w-12 sm:group-hover:w-16 lg:group-hover:w-20 transition-all duration-300"></div>
+                  <div className="w-8 sm:w-12 lg:w-16 h-0.5 sm:h-1 bg-gradient-to-r from-blue-500 to-blue-500 mx-auto rounded-full group-hover:w-12 sm:group-hover:w-16 lg:group-hover:w-20 transition-all duration-300"></div>
                 </div>
 
                 <div className={`text-center bg-white/70 border-gray-200 hover:border-gray-300 backdrop-blur-sm rounded-xl p-4 sm:p-6 lg:p-8 border transition-all duration-300 hover:transform hover:scale-105 hover:shadow-xl hover:-translate-y-2 group scroll-animate animation-delay-300`}>
                   <div className="mb-4 sm:mb-6">
-                    <div className={`text-2xl xs:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold bg-clip-text text-transparent mb-1 sm:mb-2 group-hover:scale-110 transition-transform duration-300 text-[#090a0c]`}>
+                    <div className={`text-2xl xs:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-1 sm:mb-2 group-hover:scale-110 transition-transform duration-300 text-[#090a0c]`}>
                       100%
                     </div>
-                    <div className={`text-base sm:text-lg lg:text-xl font-semibold text-[#3D67FF] mb-1 sm:mb-2 group-hover:text-blue-400 transition-colors duration-300`}>
+                    <div className={`text-base sm:text-lg lg:text-xl font-semibold text-[#3D67FF] mb-1 sm:mb-2 group-hover:text-blue-600 transition-colors duration-300`}>
                       Personalization
                     </div>
                     <p className={`text-xs sm:text-sm lg:text-base text-gray-600`}>
@@ -696,13 +689,13 @@ function App() {
                     </p>
                     
                     <div className="flex items-center gap-2 sm:gap-3 lg:gap-4">
-                      <div className="w-8 xs:w-10 lg:w-12 h-8 xs:h-10 lg:h-12 bg-gradient-to-r from-blue-400 to-blue-400 rounded-full flex items-center justify-center group-hover:scale-110 group-hover:rotate-12 transition-all duration-300 flex-shrink-0">
+                      <div className="w-8 xs:w-10 lg:w-12 h-8 xs:h-10 lg:h-12 bg-gradient-to-r from-blue-500 to-blue-500 rounded-full flex items-center justify-center group-hover:scale-110 group-hover:rotate-12 transition-all duration-300 flex-shrink-0">
                         <span className="text-white font-bold text-xs xs:text-sm lg:text-lg">
                           {testimonial.name.split(' ').map(n => n[0]).join('')}
                         </span>
                       </div>
                       <div>
-                        <div className={`text-xs xs:text-sm lg:text-base font-semibold text-gray-900 group-hover:text-blue-400 transition-colors duration-300`}>{testimonial.name}</div>
+                        <div className={`text-xs xs:text-sm lg:text-base font-semibold text-gray-900 group-hover:text-blue-600 transition-colors duration-300`}>{testimonial.name}</div>
                         <div className={`text-gray-500 text-xs lg:text-sm`}>{testimonial.role}</div>
                       </div>
                     </div>
@@ -732,9 +725,9 @@ function App() {
                   Get Started
                   <ArrowRight className="w-3 xs:w-4 sm:w-5 h-3 xs:h-4 sm:h-5 group-hover:translate-x-1 transition-transform duration-300" />
                 </a>
-                <button className={`w-full xs:w-auto sm:w-auto border border-[#f7f8fc] hover:border-[#ecedf1] hover:bg-gray-0 px-4 xs:px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-[#e6e8f0] text-sm xs:text-base sm:text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:-translate-y-0.5 min-w-[140px]`}>
+                <a href="https://dumroo.ai/contact" className={`w-full xs:w-auto sm:w-auto border border-[#f7f8fc] hover:border-[#ecedf1] hover:bg-gray-0 px-4 xs:px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-[#e6e8f0] text-sm xs:text-base sm:text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:-translate-y-0.5 min-w-[140px]`}>
                   Schedule Demo
-                </button>
+                </a>
               </div>
               
               <p className={`text-white mt-4 sm:mt-6 text-xs sm:text-sm animate-fade-in-up animation-delay-600 px-4`}>
